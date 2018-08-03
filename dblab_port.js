@@ -405,10 +405,17 @@ function menu_superior () {
 
   if(estado==1 && windowHeight > 900 ){
     h = windowHeight;
+
   } else if(estado==2){
+    institucional.hide();
+    institucional.remove();
+
   h = 2100;
 }
 
+if(estado == 1){
+  institucional = createDiv(video_links[0]);
+}
 
 
     windowResized();
