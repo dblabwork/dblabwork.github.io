@@ -236,7 +236,7 @@ function draw() {
   } else if (estado==2) {
 
     institucional.hide();
-    //institucional.remove();
+    institucional.remove();
     projetos.show();
     sobre.show();
 
@@ -407,8 +407,8 @@ function menu_superior () {
     h = windowHeight;
 
   } else if(estado==2){
-    institucional.hide();
-    institucional.remove();
+  //  institucional.hide();
+
 
   h = 2100;
 }
