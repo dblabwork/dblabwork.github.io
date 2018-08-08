@@ -88,6 +88,7 @@ function setup() {
  institucional.position((w/2)- 280 ,400);
  institucional.mouseOut(hide_controle);
  institucional.mouseOver(mostra_controle);
+  institucional.show();
 
 logo = loadImage("data/logo.png");
 play_video = loadImage("data/playm.png");
