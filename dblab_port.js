@@ -64,9 +64,7 @@ var noiseScale = 0.0027;
 
 var fonte;
 
-function preload(){
-  institucional = createVideo(['data/DBLab_1.mp4', 'data/DBLab_1.ogv', 'data/DBLab_1.webm'],(frame_inicial));
-}
+
 
 
 function setup() {
@@ -82,6 +80,14 @@ function setup() {
   canvas_sketch.parent('sketch_here');
 
   imageMode(CENTER);
+  
+  institucional = createVideo(['data/DBLab_1.mp4', 'data/DBLab_1.ogv', 'data/DBLab_1.webm'],(frame_inicial));
+  //institucional = createDiv(video_links[0]);
+ //institucional = createVideo(['data/DBLab_1.mp4', 'data/DBLab_1.ogv', 'data/DBLab_1.webm'],(frame_inicial));
+ institucional.size(560,315);
+ institucional.position((w/2)- 280 ,400);
+ institucional.mouseOut(hide_controle);
+ institucional.mouseOver(mostra_controle);
 
 logo = loadImage("data/logo.png");
 play_video = loadImage("data/playm.png");
@@ -174,12 +180,7 @@ for (var i = 1; i <= conteudos; i++) {
 
 carregar_descricoes();
 
- //institucional = createDiv(video_links[0]);
- //institucional = createVideo(['data/DBLab_1.mp4', 'data/DBLab_1.ogv', 'data/DBLab_1.webm'],(frame_inicial));
- institucional.size(560,315);
- institucional.position((w/2)- 280 ,400);
- institucional.mouseOut(hide_controle);
- institucional.mouseOver(mostra_controle);
+ 
 
 
  //fonte = loadFont("data/ubuntu.ttf");
