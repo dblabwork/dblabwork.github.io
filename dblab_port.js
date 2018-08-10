@@ -176,7 +176,7 @@ carregar_descricoes();
  //institucional.parent("player");
 
 
-institucional = select('#player');
+//institucional = select('#player');
 //institucional.position((w/2) - 280 ,400);
 //institucional.hide();
  //fonte = loadFont("data/ubuntu.ttf");
@@ -188,6 +188,8 @@ institucional = select('#player');
 
 function draw() {
 
+  institucional = select('#player');
+  
   background(255);
   strokeWeight(1);
   stroke(45,146,208,50);
